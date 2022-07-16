@@ -1,0 +1,52 @@
+/* movies.css */
+.info {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    /* outline: 1px solid red; */
+    text-align: center;
+  }
+
+  .container .text {
+    /* outline: 1px solid red; */
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .recommend {
+    /* outline: 1px solid red; */
+    margin-top: 170px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+
+  .recommend h1 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .recommend img {
+    margin-top: 15px;
+    width: 115px;
+    height: 156px;
+  }
+
+  .recommend .col {
+    text-align: center;
+  }
+
+  .recommend .movie-col {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .recommend .movie-col a {
+    color: #000 ;
+  }
