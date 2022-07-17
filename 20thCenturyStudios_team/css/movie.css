@@ -1,0 +1,244 @@
+.tkBg {
+    width: 100%;
+    outline: 1px solid blue;
+    background-image: url(/images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* #info-header {
+    outline: 1px solid red;
+} */
+
+#info-header #age {
+    /* background: #333; */
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#info-header #title {
+    margin-top: 20px;
+    /* background: #333; */
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.video {
+  margin-top: 8%;
+  position: relative;
+  padding-bottom:56.25%;
+}
+
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0 ;
+  right: 0;
+  bottom: 0;
+  width:100%;
+  height: 100%;
+}
+
+a {
+    color: #000;
+}
+
+.buttons {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    /* outline: 1px solid red; */
+    text-align: center;
+}
+
+#basic-btn {
+    background: #fff;
+    width: 45%;
+    padding: 5px;
+    outline: 1px solid #000;
+}
+
+#point-btn {
+    background: #907137;
+    outline: 1px solid #907137;
+    width: 35%;
+    padding: 5px;
+}
+
+.buttons a {
+    border-radius: 5px;
+}
+
+.icon-btns {
+    /* outline: 1px solid red; */
+    height: 47px;
+    width: 100%;
+    color: #000;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .icon-btns a {
+    color: #000;
+  }
+
+  #iconBtns-text{
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .text1{
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .text2{
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .text3{
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    /* outline: 1px solid red; */
+    text-align: center;
+  }
+
+  .container-movie .text {
+    /* outline: 1px solid red; */
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .recommend {
+    /* outline: 1px solid red; */
+    margin-top: 10%;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+
+  .recommend h1 {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .recommend img {
+    margin-top: 15px;
+    width: 115px;
+    height: 156px;
+  }
+
+  .recommend .col {
+    text-align: center;
+  }
+
+  .recommend .movie-col {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .recommend .movie-col a {
+    color: #000 ;
+  }
+
+  .company {
+    /* margin-top: 60px; */
+    /* margin-left: 22px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .company img{
+    margin-top: 60px;
+    /* margin-left: 22px; */
+    width: 40%;
+  }
+  
+  hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background-color: var(--point-color);
+    height: 3px;
+  }
+
+  .cast-container {
+    /* display: block; */
+    /* display: flex; */
+    align-items: center;
+    justify-items: center;
+    /* outline: 1px solid red; */
+    width: 100%;
+    height: 354px;
+    margin-top: 35px;
+    /* padding-left: 32px; */
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .cast-container p { 
+    padding-left: 12%;
+  }
+
+  .review {
+    /* outline: 1px solid red; */
+    margin-top: 40px;
+    padding-left: 35px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  #review_align {
+    display: flex;
+  }
+
+  .stars {
+    margin-right: 20px;
+  }
+
+  .review-line {
+    font-weight: 700;
+  }
+
+.stars span {
+  color: var(--point-color);
+}

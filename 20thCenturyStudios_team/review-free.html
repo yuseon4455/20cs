@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="search-box">
+            <form class="search-box-container">
+                <button id="submit" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+                <input 
+                    type="search" 
+                    id="search"
+                    placeholder="검색"
+                    required
+                    name="search"
+                >
+            </form>
+            <div class="button-group">
+                <button class="btn-close">
+                    취소
+                </button>
+            </div>
+            <a class="favorite" href="#영화-추천">
+                최다 검색
+            </a>
+            <div class="fav-contents">
+    
+                <div class="fav1">
+                    <img src="./images/fav1.png" alt="나이트메어앨리 포스터">
+                    <a href="/movie-night.html">나이트메어 앨리</a>
+                </div>
+                
+                <div class="fav2">
+                    <img src="./images/fav2.png" alt="더프린세스 포스터">
+                    <a href="더프린세스 상세페이지">더 프린세스</a>
+                </div>
+    
+            </div>
+        </div>
+
+    <header id="main-header">
+        <h1 id="logo">
+            <a href="./">
+                <img src="./images/logo_20cs.png" alt="로고">
+            </a>
+        </h1>
+        <nav id="gnb">
+            <a href="#" id="btn-search"><i class="bi bi-search"></i></a>
+            <button id="btn-menu"><i class="bi bi-list"></i></button>
+        </nav>
+        <nav id="gnb-menu">
+            <ul>
+              <li><a href="movies.html" class="bold">영화</a></li>
+              <li><a href="movies-action.html"> <span>-</span>
+                액션</a></li>
+              <li><a href="movies-romance.html"><span>-</span> 로맨스</a></li>
+              <li><a href="movies-comedy.html"><span>-</span> 코미디</a></li>
+              <li><a href="movies-horror.html"><span>-</span> 호러</a></li>
+              <li><a href="about.html">회사소개</a></li>
+            </ul>
+            <button id="btn-close"><i class="bi bi-x"></i></button>
+          </nav>  
+    </header>
+
+    <main class="tkBg">
+        <header id="info-header">
+         <div class="container">
+            <h4 id="age">12세 관람가</h4>
+            <h1 id="title">프리가이</h1>
+         </div>
+        </header>
+        
+        <figure class="video">
+            <iframe 
+            width="100%" 
+            src="https://www.youtube.com/embed/LeWwoGjGklc" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+        </figure>
+
+        <div class="buttons">
+            <a id="basic-btn" href="#">WATCH TRAILER</a>
+            <a id="point-btn" href="#">SHOP NOW</a>
+        </div>
+
+        <div class="icon-btns">
+            <a href="movie-free.html" id="plus"><i class="bi bi-plus-lg"></i></a>
+            <a href="cast-free.html" id="cast"><i class="bi bi-person"></i></a>
+            <a href="review-free.html" id="review"><i class="bi bi-hand-thumbs-up-fill"></i></a>
+        </div>
+        <div id="iconBtns-text">
+            <p class="text1">상세정보</p>
+            <p class="text2">출연</p>
+            <p class="text3">평가</p>
+        </div>
+        
+        <div class="reviews">
+        <div class="review">
+            <p class="id">oys***</p>
+            <div id="review_align">
+            <p class="stars"><span>★</span><span>★</span><span>★</span><span>★</span>☆</p>
+            <p class="review-line">가볍게 보기 좋다. 신선한 주제</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <p class="id">kyn***</p>
+            <div id="review_align">
+            <p class="stars"><span>★</span><span>★</span><span>★</span>☆☆</p>
+            <p class="review-line">연출이 조금 아쉽다.</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <p class="id">khj***</p>
+            <div id="review_align">
+            <p class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
+            <p class="review-line">충분히 예상가능한 결말임에도 소름끼쳤다.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="company">
+            <img src="/images/company-free.png" alt="회사">
+        </div>
+
+        <hr>
+
+        <div class="recommend">
+            <h1>추천영화</h1>
+            <div class="movie-col">
+            <div class="movie">
+                <a href="detail.html">
+                    <div class="col">
+                    <img src="images/poster.jpg" alt="영화사진">
+                    <p class="title">영화제목</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="detail.html">
+                    <div class="col">
+                    <img src="images/poster.jpg" alt="영화사진">
+                    <p class="title">영화제목</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="detail.html">
+                    <div class="col">
+                    <img src="images/poster.jpg" alt="영화사진">
+                    <p class="title">영화제목</p>
+                    </div>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="detail.html">
+                    <div class="col">
+                    <img src="images/poster.jpg" alt="영화사진">
+                    <p class="title">영화제목</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <nav class="sns-link">
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <img src="images/disney-icon.png" alt="">
+        </nav>
+        <nav class="footer-menu">
+          <a href="#">이용약관</a><span>|</span>
+          <a href="#"><strong>개인정보취급방침 </strong></a>
+        </nav>
+        <p class="copy">© 2022 Sonova Consumer Hearing GmbH</p>
+      </footer>
+
+</body>
+</html>
