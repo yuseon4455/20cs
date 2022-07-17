@@ -1,7 +1,7 @@
 .tkBg {
     width: 100%;
-    outline: 1px solid blue;
-    background-image: url(/images/bg.svg);
+/*     outline: 1px solid blue; */
+    background-image: url(../images/bg.svg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -53,21 +53,25 @@ a {
 
 #basic-btn {
     background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
     width: 45%;
     padding: 5px;
-    outline: 1px solid #000;
+/*     outline: 1px solid #000; */
 }
 
 #point-btn {
     background: #907137;
-    outline: 1px solid #907137;
+    border: 1px solid #907137;
+    border-radius: 5px;
+/*     outline: 1px solid #907137; */
     width: 35%;
     padding: 5px;
 }
 
-.buttons a {
+/* .buttons a {
     border-radius: 5px;
-}
+} */
 
 .icon-btns {
     /* outline: 1px solid red; */
