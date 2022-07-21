@@ -10,7 +10,6 @@
   }
 
   body {
-    background-color: var(--bg-color);
     color: var(--text-color);
     width: 100%;
     height: 100vh;
@@ -20,12 +19,18 @@
     overflow-y: scroll;
     max-width: 450px;
     margin: 0 auto;
+    background-color: #fff;
   }
 
-#main-header {
-    top: 0;
-    /* position: absolute; */
-    width: 100%;
+  .page {
+    position: relative;
+    width: inherit;
+    /* height: inherit; */
+    overflow: hidden;
+    background-color: var(--bg-color);
+  }
+  #main-header {
+    /* width: 100%; */
     height: var(--header-hight);
     padding-left: 20px;
     padding-right: 20px;
@@ -35,6 +40,7 @@
     justify-content: space-between;
     /* outline: 1px solid greenyellow; */
     z-index:10;
+    margin: 5px;
 }
 
 #logo a img{
@@ -71,64 +77,6 @@
     color: #fff;
 }
 
-/* main-footer */
-#main-footer {
-  position: relative;
-  background-color: var(--main-color);
-  text-align: center;
-  width: 100%;
-  margin-top: 15px;
-}
-
-#main-footer a {
-  color: #fff;
-}
-
-#main-footer .sns-link {
-  margin-bottom: 20px;
-  font-size: 24px;
-  align-items: center;
-}
-
-#main-footer .sns-link a {
-  margin-right: 1rem;
-}
-#main-footer .sns-link img{
-  /* position: absolute; */
-  width: 24px;
-  height: 24px;
-  margin-bottom: -4px;
-}
-
-#main-footer .sns-link a:last-child {
-  margin-right: 0;
-}
-
-#main-footer .footer-menu {
-  font-size: 10px;
-  margin-bottom: 5px;
-}
-
-#main-footer .footer-menu strong {
-  font-weight: 500;
-}
-
-#main-footer .footer-menu span {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  font-weight: 400;
-  font-size: 10px;
-  opacity: 0.6;
-  color: #fff;
-}
-
-#main-footer .copy{
-  font-style: normal;
-  font-weight: 350;
-  font-size: 10px;
-  line-height: 14px;
-  color: #CCCCCC;
-}
 
 
 /* 현진언니css */
@@ -143,6 +91,7 @@
   /* object-fit: cover; */
 }
 
+
 /* 스크롤바 감추기 */
 ::-webkit-scrollbar {
   display: none;
@@ -154,7 +103,7 @@
   margin-left: 20px;
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 /* 소시지버튼 */
@@ -187,21 +136,28 @@
 .main_img {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
- 
+  gap: 20px;
+  flex-wrap: nowrap;
+  /* justify-content: space-around; */
+  overflow: scroll;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }   
+
 .main_img01, .main_img02, .main_img03{
   width: 100px;
 }
-
+.main_col p{
+  text-align: center;
+  font-size: 14px;
+}
 /* home=card  */
 .container{
 position: relative;
   width: 100%;
-  padding-top: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 25px 20px 25px 20px ;
+
   overflow: hidden;
 }
 /* .home-card{
@@ -209,22 +165,18 @@ position: relative;
   gap: 40px 10px;
 } */
 .home-card .box{
-  /* width: 200px;
-  height: 100%;
-  padding-right: 15px;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; */
-  /* width: calc(50% - 10px); */
-  
   width: 50%;
   /* padding-top: 30%; */
   float: left;
   box-sizing: border-box;
   /* margin-bottom: 5%; */
 }
+.home-card p{
 
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+}
 .home-card .box img{
   width: 100%;
   display: block;
@@ -245,7 +197,8 @@ padding-left: 15px;
 .youtube{
   margin-right: 20px;
 margin-left: 20px;
-margin-top: 24px;
+margin-top: 25px;
+margin-bottom: 100px;
 font-weight: normal;
 font-size: 11px;
 }
@@ -255,7 +208,7 @@ font-size: 11px;
 margin-bottom: 20px;
 font-style: normal;
 font-weight:400;
-font-size: 12px;
+font-size: 20px;
 line-height: 16px;
 }
 
@@ -267,7 +220,7 @@ margin-bottom: 50px;
 #gnb-menu {
   /* display: none; */
   background-color: #000;
-  position: fixed;
+  position: absolute;
   width: 85%;
   height: 100vh;
   top: 0;
@@ -330,11 +283,12 @@ margin-bottom: 50px;
 
 /* 검색 UI(모달) */
 .search-box {
-  position: fixed;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 100vh;
   background: #000;
-  outline: 1px solid #fff;
+  /* outline: 1px solid #fff; */
   left: 0; 
   top: var(--header-height);
   padding: 26px 18px 59px;
@@ -440,8 +394,9 @@ margin-bottom: 50px;
   background-color: var(--main-color);
   text-align: center;
   width: 100%;
-  height: 98px;
-  margin-top: 15px;
+  height: 150px;
+  padding-top: 30px;
+  border-top: 1px solid #333;
 }
 
 #main-footer a {

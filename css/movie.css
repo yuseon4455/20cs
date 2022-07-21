@@ -4,6 +4,7 @@
     background-image: url(../images/bg.svg);
     background-repeat: no-repeat;
     background-size: 100%;
+
 }
 
 /* #info-header {
@@ -146,10 +147,10 @@ a {
   .recommend {
     /* outline: 1px solid red; */
     margin-top: 10%;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
   }
 
   .recommend h1 {
