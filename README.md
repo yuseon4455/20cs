@@ -1,4 +1,4 @@
 # 20thCenturyStudios_
 20thCenturyStudios
 
-https://six6na.github.io/20thCenturyStudios_/
+https://yuseon4455.github.io/20cs/
